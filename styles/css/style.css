@@ -49,13 +49,23 @@ table {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 15px 0;
   background-color: #131315;
-  opacity: 0.5;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 15px 5%;
+    background-color: transparent;
+  }
 }
 .header__logo {
   text-decoration: none;
@@ -69,17 +79,6 @@ table {
   align-items: center;
   gap: 15px;
 }
-.header__nav-link {
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  color: #ffffff;
-}
-.header__nav-link_active {
-  font-size: 20px;
-  font-weight: 600;
-}
 .header__link {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
@@ -87,9 +86,42 @@ table {
   text-decoration: none;
   color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .header__link {
+    display: none;
+  }
+}
+.header__link_active {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header__button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header__button {
+    display: inline-block;
+  }
+}
+.header__button-image {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 480px) {
+  .header__button-image {
+    width: 36px;
+    height: 36px;
+  }
+}
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
+  background-image: url("../../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
