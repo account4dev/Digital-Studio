@@ -2,10 +2,12 @@
 @import 'mixin';
 @import 'reset';
 @import 'header';
+@import 'hero';
 
 body {
   background-image: url('../../images/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
