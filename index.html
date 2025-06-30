@@ -13,12 +13,12 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="#">
-      <img class="header__logo-image" src="images/logo.svg" alt="Logo">
+    <a class="logo" href="#">
+      <img class="logo__image" src="images/logo.svg" alt="Logo">
     </a>
 
     <nav class="header__nav">
-      <a class="header__link header__link_active" href="#">О студии</a>
+      <a class="header__link header__link--active" href="#">О студии</a>
       <a class="header__link " href="#">Наши преимущества</a>
       <a class="header__link " href="#">Интеграция с сервисами</a>
       <a class="header__link " href="#">Команда</a>
@@ -30,26 +30,33 @@
 
     <a class="header__link" href="tel:+79173183828">+7 917 318 38 28</a>
 
-    <button class="header__button">
-      <img class="header__button-image" src="images/menu.svg" alt="Menu">
+    <button class="menu">
+      <img class="menu__image" src="images/menu.svg" alt="Menu">
     </button>
   </header>
 
   <main class="main">
     <div class="hero">
-      <img class="hero__line" src="images/line.svg" alt="Line">
+      <div class="hero__content">
+        <img class="hero__decoration" src="images/line.svg" alt="Decorative line">
 
-      <img class="hero__image" src="images/astronaut.svg" alt="Astronaut">
-      <h2 class="hero__subtitle">Digital-студия</h2>
-      <h1 class="hero__title">RION</h1>
+        <img class="hero__illustration" src="images/astronaut.svg" alt="Astronaut illustration">
 
-      <p class="hero__text">
+        <div class="hero__heading">
+          <h2 class="hero__subtitle">Digital-студия</h2>
+          <h1 class="hero__title">RION</h1>
+        </div>
+      </div>
+
+      <p class="hero__description">
         Используйте<br>
         эффективные<br>
         инструменты
       </p>
 
-      <p class="hero__copyright">2024 ©</p>
+      <p class="hero__copyright">
+        <span class="hero__copyright-label">2024 ©</span>
+      </p>
     </div>
   </main>
 </body>
