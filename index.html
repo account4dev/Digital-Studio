@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Digital Studio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,50 +13,46 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="#">
-      <img class="logo__image" src="images/logo.svg" alt="Logo">
+    <a class="header__logo" href="/">
+      <img class="header__logo-image" src="/images/logo.svg" alt="Logo">
     </a>
 
-    <nav class="header__nav">
-      <a class="header__link header__link--active" href="#">О студии</a>
-      <a class="header__link " href="#">Наши преимущества</a>
-      <a class="header__link " href="#">Интеграция с сервисами</a>
-      <a class="header__link " href="#">Команда</a>
-      <a class="header__link " href="#">Обратная связь</a>
-      <a class="header__link " href="#">Портфолио</a>
-      <a class="header__link " href="#">Отзывы</a>
-      <a class="header__link " href="#">Как нас найти</a>
+    <nav class="header__navigation">
+      <a class="header__navigation-link header__navigation-link_selected" href="#">О студии</a>
+      <a class="header__navigation-link" href="#">Наши преимущества</a>
+      <a class="header__navigation-link" href="#">Интеграция с сервисами</a>
+      <a class="header__navigation-link" href="#">Команда</a>
+      <a class="header__navigation-link" href="#">Обратная связь</a>
+      <a class="header__navigation-link" href="#">Портфолио</a>
+      <a class="header__navigation-link" href="#">Отзывы</a>
+      <a class="header__navigation-link" href="#">Как нас найти</a>
     </nav>
 
-    <a class="header__link" href="tel:+79173183828">+7 917 318 38 28</a>
+    <a class="header__phone" href="tel:+79173183828">+7 917 318 38 28</a>
 
-    <button class="menu">
-      <img class="menu__image" src="images/menu.svg" alt="Menu">
+    <button class="header__menu">
+      <img class="header__menu-image" src="/images/menu.svg" alt="Menu">
     </button>
   </header>
 
   <main class="main">
     <div class="hero">
-      <div class="hero__content">
-        <img class="hero__decoration" src="images/line.svg" alt="Decorative line">
-
-        <img class="hero__illustration" src="images/astronaut.svg" alt="Astronaut illustration">
-
-        <div class="hero__heading">
-          <h2 class="hero__subtitle">Digital-студия</h2>
-          <h1 class="hero__title">RION</h1>
-        </div>
+      <div class="hero__wrapper">
+        <div class="hero__wrapper-line"></div>
+        <img class="hero__wrapper-preview" src="/images/astronaut.svg" alt="Astronaut">
+        <h1 class="hero__wrapper-title">
+          <span class="hero__wrapper-subtitle">Digital-студия</span>
+          Rion
+        </h1>
       </div>
 
-      <p class="hero__description">
+      <p class="hero__tagline">
         Используйте<br>
         эффективные<br>
         инструменты
       </p>
 
-      <p class="hero__copyright">
-        <span class="hero__copyright-label">2024 ©</span>
-      </p>
+      <p class="hero__copyright">2024 &copy;</p>
     </div>
   </main>
 </body>

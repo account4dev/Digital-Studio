@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  width: 80%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 10%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &-line {
+      width: 300px;
+      height: 2px;
+      background-color: $white;
+
+      @media screen and (max-width: 768px) {
+        width: 60px;
+      }
+    }
+
+    &-preview {
+      width: 500px;
+      height: 500px;
+
+      @media screen and (max-width: 768px) {
+        width: 420px;
+        height: 420px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 220px;
+        height: 220px;
+      }
+    }
+
+    &-title {
+      font-size: 104px;
+      font-family: $font-roboto-sans;
+      font-weight: 400;
+      letter-spacing: 25px;
+      text-transform: uppercase;
+      color: $white;
+
+      @media screen and (max-width: 768px) {
+        font-size: 80px;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 48px;
+        letter-spacing: 10px;
+      }
+    }
+
+    &-subtitle {
+      display: block;
+      margin-left: 40px;
+      font-size: 28px;
+      font-family: $font-roboto-sans;
+      font-weight: 300;
+      letter-spacing: 4px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      color: $white;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 35px;
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-left: -5px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__tagline {
+    position: absolute;
+    top: 70%;
+    font-size: 30px;
+    font-family: $font-roboto-sans;
+    font-weight: 500;
+    color: $white;
+
+    @media screen and (max-width: 768px) {
+      top: 70%;
+      right: 25px;
+      font-size: 24px;
+      text-align: right;
+    }
+
+    @media screen and (max-width: 480px) {
+      position: static;
+      margin: 10% 10px 20% 0;
+    }
+  }
+
+  &__copyright {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: $font-roboto-sans;
+    font-weight: 600;
+    text-align: right;
+    color: $white;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}
