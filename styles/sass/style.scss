@@ -1,15 +1,21 @@
-@import 'variables';
-@import 'mixin';
-@import 'reset';
-@import 'header';
-@import 'hero';
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "header/header";
+@import "main/main";
+@import "main/hero";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('../../images/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+  background-image: url("/images/background.png");
+  background-size: 240%;
+}
+
+button {
+  cursor: pointer;
 }
