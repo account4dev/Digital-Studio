@@ -1,9 +1,6 @@
 .hero {
-  position: relative;
-  width: 80%;
-
   @media screen and (max-width: 768px) {
-    width: 100%;
+    padding-top: 5%;
   }
 
   @media screen and (max-width: 480px) {
@@ -83,15 +80,15 @@
   }
 
   &__tagline {
-    position: absolute;
-    top: 70%;
+    position: relative;
+    top: -65px;
     font-size: 30px;
     font-family: $font-roboto-sans;
     font-weight: 500;
     color: $white;
 
     @media screen and (max-width: 768px) {
-      top: 70%;
+      top: -55px;
       right: 25px;
       font-size: 24px;
       text-align: right;
@@ -104,7 +101,6 @@
   }
 
   &__copyright {
-    margin-top: 10px;
     font-size: 20px;
     font-family: $font-roboto-sans;
     font-weight: 600;
@@ -112,7 +108,6 @@
     color: $white;
 
     @media screen and (max-width: 768px) {
-      margin-top: 30px;
       text-align: center;
     }
   }
