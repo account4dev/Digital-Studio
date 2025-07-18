@@ -1,0 +1,112 @@
+.advantages {
+  padding: 6% 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 8%;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10%;
+    }
+  }
+
+  &__wrapper:nth-child(2) {
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 2%;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10%;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-family: $font-roboto-sans;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $white;
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 80px 0 30px 0;
+    }
+  }
+
+  &__line {
+    width: 746px;
+    height: 2px;
+    background-color: $white;
+
+    @media screen and (max-width: 768px) {
+      width: 392px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 172px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 360px;
+    gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      height: 240px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 260px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-family: $font-roboto-sans;
+      font-weight: 500;
+      color: $white;
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    &-text {
+      font-size: 20px;
+      font-family: $font-roboto-sans;
+      font-weight: 500;
+      line-height: 1.2;
+      color: $white;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@
 @import "header/header";
 @import "main/main";
 @import "main/hero";
+@import "main/about";
+@import "main/advantages";
 
 * {
   margin: 0;
@@ -12,9 +14,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("/images/background.png");
-  background-size: 240%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 button {
