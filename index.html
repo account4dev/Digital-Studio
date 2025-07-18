@@ -19,8 +19,8 @@
       </a>
 
       <nav class="header__navigation">
-        <a class="header__navigation-link header__navigation-link_selected" href="#">О студии</a>
-        <a class="header__navigation-link" href="#">Наши преимущества</a>
+        <a class="header__navigation-link header__navigation-link_selected" href="#about">О студии</a>
+        <a class="header__navigation-link" href="#advantages">Наши преимущества</a>
         <a class="header__navigation-link" href="#">Интеграция с сервисами</a>
         <a class="header__navigation-link" href="#">Команда</a>
         <a class="header__navigation-link" href="#">Обратная связь</a>
@@ -38,14 +38,15 @@
   </header>
 
   <main class="main">
-    <div class="container hero">
+    <section class="container hero">
       <div class="hero__wrapper">
-        <div class="hero__wrapper-line"></div>
-        <img class="hero__wrapper-preview" src="/images/astronaut.svg" alt="Astronaut">
-        <h1 class="hero__wrapper-title">
-          <span class="hero__wrapper-subtitle">Digital-студия</span>
+        <div class="hero__line"></div>
+        <img class="hero__preview" src="/images/astronaut.svg" alt="Astronaut">
+
+        <h2 class="hero__title">
+          <span class="hero__subtitle">Digital-студия</span>
           Rion
-        </h1>
+        </h2>
       </div>
 
       <p class="hero__tagline">
@@ -55,7 +56,73 @@
       </p>
 
       <p class="hero__copyright">2024 &copy;</p>
-    </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <img class="about__logo" src="/images/logo.svg" alt="Logo">
+          <span class="about__line"></span>
+          
+          <h2 class="about__title">Digital-студия</h2>
+        </div>
+
+        <div class="about__description">
+          <h3 class="about__description-subtitle">
+            которая говорит с бизнесменами,
+            предпринимателями и руководителями
+            на одном языке.
+          </h3>
+
+          <p class="about__description-text">
+            Все, что мы делаем, нацелено на Вашего клиента и покупателя. Ведь именно он будет взаимодействовать с сайтом и принимать решение о покупке.
+          </p>
+
+          <p class="about__description-text">
+            Чтобы продажи росли, а рекламный бюджет расходовался экономно, мы разрабатываем эффективные маркетинговые стратегии в различных digital-каналах. Предлагаем оптимальные решения как с точки зрения роста продаж, так и с учетом Вашего бюджета.
+          </p>
+        </div>
+
+        <p class="about__text">Работаем с 2019 года</p>
+      </div>
+    </section>
+
+    <section id="advantages" class="advantages container">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <span class="advantages__line"></span>
+      </div>
+
+      <div class="advantages__wrapper">
+        <div class="advantages__card">
+          <h3 class="advantages__card-title">Говорим с Вами на одном языке</h3>
+          <p class="advantages__card-text">
+            У нас нет отдела продаж и назойливых менеджеров. С Вами общаются настоящие практики, которые сами работают над проектами и погружены в бизнес-процессы. Мы говорим на языке бизнеса и даем компетентные ответы на любые вопросы.
+          </p>
+        </div>
+
+        <div class="advantages__card">
+          <h3 class="advantages__card-title">Ведем Вас к результату кратчайшим путем</h3>
+          <p class="advantages__card-text">
+            Мы находим кратчайший путь для решения Вашей задачи. Вместо того, чтобы попутно «навешивать» лишние услуги, мы берем набор только тех инструменто, которые решат Вашу задачу и не потребуют лишних затрат.
+          </p>
+        </div>
+
+        <div class="advantages__card">
+          <h3 class="advantages__card-title">Не «привязываем» Вас к нашим услугам</h3>
+          <p class="advantages__card-text">
+            Работаем только с популярными системами управления сайтами (bitrix, MODx,WordPress, Joomla и т.д.). Поэтому, после запуска сайта, Вы можете либо продолжить обслуживание у нас, либо поручить это своим работникам. Или даже выбрать другого подрядчика.
+          </p>
+        </div>
+
+        <div class="advantages__card">
+          <h3 class="advantages__card-title">Оказываем полный спектр digital-услуг</h3>
+          <p class="advantages__card-text">
+            Мы закрываем большинство Ваших потребностей в сфере интернет-маркетинга. Если Вы пришли к нам за созданием сайта, то Вам больше не потребуетсяискать исполнителей для его продвижения и рекламы. Все это можно сделать у нас.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
